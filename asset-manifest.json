@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Tracker-react/static/css/main.b1e93284.css",
-    "main.js": "/Tracker-react/static/js/main.8d5d7810.js",
+    "main.js": "/Tracker-react/static/js/main.5047c27e.js",
     "static/media/cancel.svg": "/Tracker-react/static/media/cancel.cf4f165477518e7ce5c4f4838cdb860d.svg",
     "index.html": "/Tracker-react/index.html",
     "static/media/plus.svg": "/Tracker-react/static/media/plus.9cf842eab6806b1886d9197fdcf744d9.svg",
     "main.b1e93284.css.map": "/Tracker-react/static/css/main.b1e93284.css.map",
-    "main.8d5d7810.js.map": "/Tracker-react/static/js/main.8d5d7810.js.map"
+    "main.5047c27e.js.map": "/Tracker-react/static/js/main.5047c27e.js.map"
   },
   "entrypoints": [
     "static/css/main.b1e93284.css",
-    "static/js/main.8d5d7810.js"
+    "static/js/main.5047c27e.js"
   ]
 }
