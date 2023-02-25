@@ -6,9 +6,9 @@ import plusLogo from './img/plus.svg'
 
 const TrackerPage = () => {
 
-	const Monday = ['жим ногами', 'разгибание ног', 'сгибание ног', 'армейский жим штанги стоя', 'подъем гантелей через стороны'];
-	const Tuesday = ['Жим гантелей лежа', 'жим лежа на наклонной скамье ', 'отжимание от брусьев', 'французский жим штанги лежа'];
-	const Friday = ['Подтягивание на турнике', 'тяга горизонтального блока к поясу сидя', 'тяги гантели одной рукой в наклоне', 'сгибание рук со штангой стоя']
+	const Monday = ['monday 1 ', 'monday 2', 'monday 3', 'monday 4'];
+	const Tuesday = ['tuesday1', 'tuesday2', 'tuesday 3'];
+	const Friday = ['friday 1', 'friday 2 ', 'friday 3']
 	let currrentDay = new Date()
 	let day = currrentDay.getDay()
 	let currentMass = Friday
@@ -34,7 +34,6 @@ const TrackerPage = () => {
 
 	const cancel = cancelLogo
 	const plus = plusLogo
-	const plusClicked = 'plus-btn-clicked'
 	const [count, setCount] = useState(0)
 	const [plusClasses, setPlusClasses] = useState(['plus-btn'])
 	const [cancelClasses, setCancelClasses] = useState(['cancel-btn'])
@@ -69,10 +68,9 @@ const TrackerPage = () => {
 				<div className="title">ПОДХОДО
 					-
 					TRACKER</div>
-
 			</div>
+			<div className="exname"><p>{currentMass[massIndex]}</p>  <p>({massIndex + 1}/{currentMass.length})</p></div>
 			<div className="mainpath">
-				<div className="exname">{`${currentMass[massIndex]}(${massIndex + 1}/${currentMass.length})`}</div>
 				<div className="counter">{count}</div>
 				<div className="btns">
 					<button onClick={() => { Increment(); SwitchPlusColor() }} className={plusClasses}>

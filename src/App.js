@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import TrackerPage from "./pages/TrackerPage";
 import RecordsPage from './pages/RecordsPage'
 import AboutPage from "./pages/AboutPage";
@@ -11,6 +11,7 @@ function App() {
 	return (
 		<>
 			<Navigation />
+
 			<Routes>
 				<Route path="/" element={<TrackerPage />} />
 				<Route path="/records" element={<RecordsPage />} />

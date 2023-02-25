@@ -5,16 +5,27 @@
 
 
 body {
+
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 	font-family: sans-serif;
 	margin: 20px;
 	padding: 0;
-
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 
+}
+
+
+
+p {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
 }
 
 .aboutpage {
@@ -46,7 +57,7 @@ nav {
 
 .link:hover {
 	opacity: 1;
-	border-bottom: 4px solid rgb(15, 18, 44);
+	border-bottom: 3px solid rgb(15, 18, 44);
 	transition: border-bottom .1s linear;
 }
 
@@ -105,7 +116,8 @@ nav {
 
 .cancel-btn,
 .plus-btn {
-
+	background-color: #dedede;
+	opacity: 0.9;
 	width: 20vh;
 	height: 20vh;
 	border: none;
@@ -144,8 +156,10 @@ nav {
 	flex-wrap: wrap;
 	text-align: center;
 	align-items: center;
-	/* justify-content: center; */
+	justify-content: center;
+
 }
+
 
 
 .aboutPage {
@@ -154,4 +168,70 @@ nav {
 	justify-content: center;
 	margin-bottom: 15px;
 	font-size: 20px;
+}
+
+.records-title {
+	display: flex;
+	justify-content: center;
+	font-size: 36px;
+	text-align: center;
+}
+
+.records-ul {
+	text-align: center;
+	padding: 0;
+}
+
+.records-li {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+.records-btn {
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+	border: 2px solid rgb(15, 18, 44);
+	margin-left: 15px;
+	border-radius: 5px;
+	background-color: inherit;
+	/* display: flex; */
+	align-items: center;
+}
+
+.records-input {
+
+	font-size: 100%;
+	background-color: rgba(0, 255, 255, 0.223);
+	border: none;
+	padding: 0;
+	margin-right: 0;
+	text-align: center;
+	align-items: center;
+}
+
+.god {
+
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	margin-left: 25px;
+	margin-top: 30px;
+	text-align: center;
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-image: url(./pages/img/god_mode.svg);
+}
+
+
+
+@media (min-width: 900px) {
+	.exname {
+		margin-left: 65px;
+	}
 }
