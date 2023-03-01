@@ -8,10 +8,6 @@ const TrackerPage = () => {
 	const defaultDayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 
-
-
-
-
 	let currrentDay = new Date()
 	let day = currrentDay.getDay()
 	const [massIndex, setMassIndex] = useState(0)
