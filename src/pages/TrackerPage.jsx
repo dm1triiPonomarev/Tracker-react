@@ -5,30 +5,26 @@ import plusLogo from './img/plus.svg'
 
 
 const TrackerPage = () => {
+	const defaultDayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-	const Monday = ['monday 1 ', 'monday 2', 'monday 3', 'monday 4'];
-	const Tuesday = ['tuesday1', 'tuesday2', 'tuesday 3'];
-	const Friday = ['friday 1', 'friday 2 ', 'friday 3']
+
+
+
+
+
 	let currrentDay = new Date()
 	let day = currrentDay.getDay()
-	let currentMass = Friday
 	const [massIndex, setMassIndex] = useState(0)
 
-	if (day === 1) {
-		currentMass = Monday
-	} else if (day === 3) {
-		currentMass = Tuesday
-	} else {
-		currentMass = Friday
-	}
+	let currentMass = [defaultDayArray[day] + " 1", defaultDayArray[day] + " 2", defaultDayArray[day] + " 3"]
+
 
 	function SkipIndex() {
-
 		if (massIndex === currentMass.length - 1) {
 			setMassIndex(0)
 		} else {
 			setMassIndex(() => massIndex + 1)
-			console.log(massIndex);
+
 		}
 	}
 
